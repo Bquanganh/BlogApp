@@ -1,0 +1,62 @@
+.login{
+    height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background:
+     url('https://cdnb.artstation.com/p/assets/images/images/052/297/667/large/nicolas-millot-stray-nicolas-millot-cat-04.jpg?1659449725');
+    background-size:cover;
+}
+
+.loginTitle{
+    font-size: 50px;
+    color:rgb(13, 14, 13);
+}
+
+.loginForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.loginForm >label{
+    font-size: 20px;
+    margin: 10px 0;
+    color:rgb(132, 117, 218);
+}
+
+.loginInput{
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.loginButton{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgb(132, 117, 218);
+    border: none;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.loginButton:disabled{
+    cursor:not-allowed;
+    background-color: rgb(243, 117, 71);
+}
+
+.loginRegisterButton{
+    position:absolute;
+    top:90px;
+    right: 50px;
+    background-color: rgb(132, 117, 218);
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}

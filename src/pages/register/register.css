@@ -1,0 +1,57 @@
+.register{
+    height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background:
+     url('https://cdna.artstation.com/p/assets/images/images/052/340/028/large/roman-kosmachev-fc934a42e6510ff7dc2f80b4b21b9a92.jpg?1659543007');
+    background-size:cover;
+}
+
+.registerTitle{
+    font-size: 50px;
+    color:aquamarine;
+}
+
+.registerForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.registerForm >label{
+    font-size: 20px;
+    margin: 10px 0;
+    color:aqua;
+}
+
+.registerInput{
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.registerButton{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: aqua;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.registerRegisterButton{
+    position:absolute;
+    top:90px;
+    right: 50px;
+    background-color: teal;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}

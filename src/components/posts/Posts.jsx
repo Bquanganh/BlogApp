@@ -1,0 +1,14 @@
+import Post from "../post/Post"
+import "./post.css"
+
+export default function Posts({posts}){
+    return (
+        <div className="posts">
+            {posts.map((p)=>(
+
+            <Post posts={p}/>
+            ))}
+            
+        </div>
+    )
+}
