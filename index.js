@@ -42,7 +42,7 @@ app.use("/api/posts",postRoute)
 app.use("/api/categories",categoryRoute)
 
 
-app.listen("5000",()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log('Connecting is Success');
 })
 
