@@ -7,6 +7,10 @@ const INITIAL_STATE ={
     error:false,
 };
 
+const URL = 'https://qablogapp.herokuapp.com';
+
+export const ApiDomain = createContext(URL)
+
 export const Context = createContext(INITIAL_STATE);
 
 export const ContextProvider=({children})=> {
