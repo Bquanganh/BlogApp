@@ -11,7 +11,7 @@ const path = require('path')
 const cors = require('cors');
 
 
-
+app.options('*', cors())
 
 app.use(function (req, res, next) {
 
