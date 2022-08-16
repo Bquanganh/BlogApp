@@ -11,9 +11,13 @@ const path = require('path')
 const cors = require('cors');
 
 
-var corsOptions = {
-    origin: 'https://candid-crostata-3545cd.netlify.app'
-}
+app.use(cors({
+
+        origin: "*",
+        methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+        preflightContinue: false,
+        optionsSuccessStatus: 204  
+}))
 
 
 
