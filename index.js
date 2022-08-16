@@ -11,7 +11,9 @@ const path = require('path')
 const cors = require('cors');
 
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://candid-crostata-3545cd.netlify.app/',
+}));
 
 
 
