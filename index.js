@@ -11,13 +11,7 @@ const path = require('path')
 const cors = require('cors');
 
 
-app.use(cors({
-
-    origin: "*",
-    preflightContinue: false,
-    optionsSuccessStatus: 204
-  
-}))
+app.use(cors())
 
 app.use(function (req, res, next) {
 
