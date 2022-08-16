@@ -9,6 +9,8 @@ export default function Write() {
     const[file,setFile] =useState(null);
     const{user} = useContext(Context);
 
+    const api = 'https://qablogapp.herokuapp.com'
+
     const handleSubmit = async (e)=>{
         e.preventDefault();
         const newPost ={
@@ -23,13 +25,13 @@ export default function Write() {
             data.append("file",file);
             newPost.photo = filename;
             try {
-                await axios.post("/api/upload",data)
+                await axios.post(`${api}/api/upload`,data)
             } catch (error) {
                 
             }
         }
         try {
-            const res = await axios.post("/api/posts",newPost);
+            const res = await axios.post(`${api}/api/posts`,newPost);
             window.location.replace("/post/"+res.data._id)
         } catch (error) {
             

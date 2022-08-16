@@ -10,15 +10,16 @@ export default function Register() {
   const [error,setError] = useState('')
 
   const handleSubmit = async (e)=>{
+    const URL = 'https://qablogapp.herokuapp.com';
     e.preventDefault();
     setError(false)
     try {
-      const res = await axios.post("api/auth/register",{
+      const res = await axios.post(`${URL}/api/auth/register`,{
         username,
         email,
         password,
       });
-      res.data && window.location.replace("/login");
+      res.data && window.location.replace("/");
     } catch (error) {
       setError(true);
     }
@@ -52,7 +53,7 @@ export default function Register() {
               <button className="registerButton" type ="submit">Register</button>
           </form>
           <button className="registerLoginButton">
-            <Link to ="/register" className='link'>Login</Link>
+            <Link to ="/login" className='link'>Login</Link>
           </button>
           {error && <span style={{color:"red", marginTop:"20px"}}>Something went wrong</span>}
       </div>

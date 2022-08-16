@@ -9,13 +9,14 @@ import {useLocation} from 'react-router'
 
 export default function HomePage(){
     const [posts, setPosts]= useState([]);
-    const {search} = useLocation()
+    const {search} = useLocation();
+    const api = 'https://qablogapp.herokuapp.com'
     
    
     
     useEffect(() =>{
         const fetchPosts = async() =>{
-            const res = await axios.get("/api/posts"+search)
+            const res = await axios.get(`${api}/api/posts`+search)
             setPosts(res.data);
         }
         fetchPosts();
