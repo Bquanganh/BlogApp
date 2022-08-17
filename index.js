@@ -13,7 +13,7 @@ const cors = require('cors');
 
 
 
-
+app.use(cors());
 
 
 dotenv.config();
