@@ -38,7 +38,7 @@ app.post("/api/upload",upload.single("file"),(req,res)=>{
 });
 // Add Access Control Allow Origin headers
 app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "https://candid-crostata-3545cd.netlify.app/");
+    res.setHeader("Access-Control-Allow-Origin", "https://candid-crostata-3545cd.netlify.app");
     res.header(
       "Access-Control-Allow-Headers",
       "Origin, X-Requested-With, Content-Type, Accept"
