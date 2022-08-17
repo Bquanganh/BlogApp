@@ -36,12 +36,7 @@ const upload = multer({storage:storage});
 app.post("/api/upload",upload.single("file"),(req,res)=>{
     res.status(200).json("File has been uploaded");
 });
-// Add Access Control Allow Origin headers
-app.all('/', function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "X-Requested-With");
-    next()
-  });
+
 
 
 app.use("/api/auth", authRoute)
